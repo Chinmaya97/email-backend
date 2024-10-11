@@ -32,21 +32,23 @@ An email notification system built with Node.js and MongoDB/MySQL that allows us
    ```
 
 2. Install dependencies
-   npm i
-   3.Create a .env file in the root directory and add the following environment variables:
-   PORT=your_port_number
-   MONGODB_URI=your_mongodb_uri
-   CORS_ORIGIN=your_cors_origin
-   SENDGRID_API_KEY=your_sendgrid_api_key
-   REDIS_URL=your_redis_url
-   SENDGRID_FROM=your_sendgrid_from_email
+   npm install
+
+3.Create a .env file in the root directory and add the following environment
+
+PORT=your_port_number
+MONGODB_URI=your_mongodb_uri
+CORS_ORIGIN=your_cors_origin
+SENDGRID_API_KEY=your_sendgrid_api_key
+REDIS_URL=your_redis_url
+SENDGRID_FROM=your_sendgrid_from_email
 
 4.Start the server:
 npm run dev
 
 ## Example Requests
 
-### 1. Send Email
+1.  Send Email
 
 **Endpoint**: `POST /api/v1/emails/send`
 
@@ -75,7 +77,6 @@ npm run dev
 
 **Description**: Replace `:emailId` with the actual email ID to get the status of the email.
 
-**Example Request**:
 **Example Response**:
 ```json
 {
@@ -88,6 +89,7 @@ npm run dev
 
  # Real-Time Notifications
 Connect to the WebSocket server to receive real-time email status updates. The status will be emitted as soon as the email is either sent or failed.
+
 
 
 
