@@ -26,7 +26,7 @@ An email notification system built with Node.js and MongoDB/MySQL that allows us
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Chinmaya97/email-backend.git
     cd backend
 
    ```
@@ -72,7 +72,7 @@ npm run dev
   "success": true
 }
 
- ### 2. Get Email Status
+ ## 2. Get Email Status
 **Endpoint**: `GET /api/v1/emails/:emailId/status`
 
 **Description**: Replace `:emailId` with the actual email ID to get the status of the email.
