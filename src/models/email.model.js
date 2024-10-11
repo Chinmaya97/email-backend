@@ -14,4 +14,6 @@ const emailSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Email", emailSchema);
+ const Email = mongoose.model("Email", emailSchema);
+ 
+ export default Email
