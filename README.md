@@ -72,10 +72,10 @@ npm run dev
   "success": true
 }
 
- 2. Get Email Status
+ ### 2. Get Email Status
 **Endpoint**: `GET /api/v1/emails/:emailId/status`
 
-*Description**: Replace `:emailId` with the actual email ID to get the status of the email.
+**Description**: Replace `:emailId` with the actual email ID to get the status of the email.
 
 **Example Response**:
 ```json
@@ -87,8 +87,10 @@ npm run dev
   }
 }
 
- # Real-Time Notifications
+
+ Real-Time Notifications
 Connect to the WebSocket server to receive real-time email status updates. The status will be emitted as soon as the email is either sent or failed.
+
 
 
 
